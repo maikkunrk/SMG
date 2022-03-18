@@ -18,6 +18,6 @@ openedImage = images[n]# parses the image to the 'openedImage' variable
 image = cv.imread(cv.samples.findFile(openedImage)) #loads the image
 cv.imshow("Display Window", image) #displays the image
 k = cv.waitKey(0) # keeps the window open until you press a key
-# the number of images will chancge and many more templates will be added, also changes will be made to the probability of the program showing sertain images
-#in the end we want hat part of the code to go randomly from template to template and to be a higher chance for the user to see an image we found on the internet,
+# the number of images will change and many more templates will be added, also changes will be made to the probability of the program showing certain images
+#in the end we want that part of the code to go randomly from template to template and for there to be a higher chance for the user to see an image we found on the internet,
 #less chance for an image we created and lesser for a completely random one
