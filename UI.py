@@ -15,6 +15,7 @@ import cv2 as cv
 import sys
 
 images = glob('images/*.png') + glob('images/*.jpg') #finds all images and shoves them to a list
+memes = glob('memes/*.png')+glob('memes/*.jpg')
 
 print(len(images))
 print(images)
@@ -92,6 +93,7 @@ class Ui_MainWindow(object):
 
     def loadRandomImage(self):
         self.i = rd.randint(1, 10)  # we set i as a random number so we can then influence the frequency of the images that will appear
+        self.j = rd.randint(0,11) #jim
         if self.i <= 5:
             self.n = rd.randint(0, 7)
         elif self.i > 5 and self.i <= 8:
@@ -99,8 +101,10 @@ class Ui_MainWindow(object):
         elif self.i > 8 and self.i <= 10:
             self.n = rd.randint(15, 19)
         print(self.n)
-        self.selectedImagePath = images[self.n]
-
+        if j<=1:#jim
+            self.selectedImagePath = images[self.n]#jim
+        elif j>=2:#jim
+            self.selectedImagePath=memes[self.n] #jim
         return self.selectedImagePath
 
 if __name__ == "__main__":
