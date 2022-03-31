@@ -15,7 +15,7 @@ import cv2 as cv
 import sys
 
 images = glob('images/*.png') + glob('images/*.jpg') #finds all images and shoves them to a list
-memes = glob('memes/*.png')+glob('memes/*.jpg')
+memes = glob('memes/*.png')+glob('memes/*.jpg')#jim
 
 print(len(images))
 print(images)
