@@ -103,58 +103,37 @@ class Ui_MainWindow(object):
     def loadFromComboBoxImage(self):
         if self.comboBox.currentIndex() == 1:
             self.i = rd.randint(0, len(brainMemeImages) - 1)
-            print(self.i)
             self.selectedImagePath = brainMemeImages[self.i]
-            print(self.selectedImagePath)
         elif self.comboBox.currentIndex() == 2:
             self.i = rd.randint(0, len(bambMemeImages) - 1)
-            print(self.i)
             self.selectedImagePath = bambMemeImages[self.i]
-            print(self.selectedImagePath)
         elif self.comboBox.currentIndex() == 3:
             self.i = rd.randint(0, len(buttonMemeImages) - 1)
-            print(self.i)
             self.selectedImagePath = buttonMemeImages[self.i]
-            print(self.selectedImagePath)
         elif self.comboBox.currentIndex() == 4:
             self.i = rd.randint(0, len(catMemeImages) - 1)
-            print(self.i)
             self.selectedImagePath = catMemeImages[self.i]
-            print(self.selectedImagePath)
         elif self.comboBox.currentIndex() == 5:
             self.i = rd.randint(0, len(disasterMemeImages) - 1)
-            print(self.i)
             self.selectedImagePath = disasterMemeImages[self.i]
-            print(self.selectedImagePath)
         elif self.comboBox.currentIndex() == 6:
             self.i = rd.randint(0, len(drakeMemeImages) - 1)
-            print(self.i)
             self.selectedImagePath = drakeMemeImages[self.i]
-            print(self.selectedImagePath)
         elif self.comboBox.currentIndex() == 7:
             self.i = rd.randint(0, len(ldMemeImages) - 1)
-            print(self.i)
             self.selectedImagePath = ldMemeImages[self.i]
-            print(self.selectedImagePath)
         elif self.comboBox.currentIndex() == 8:
             self.i = rd.randint(0, len(modernProbMemeImages) - 1)
-            print(self.i)
             self.selectedImagePath = modernProbMemeImages[self.i]
-            print(self.selectedImagePath)
         elif self.comboBox.currentIndex() == 9:
             self.i = rd.randint(0, len(monkeyMemeImages) - 1)
-            print(self.i)
             self.selectedImagePath = monkeyMemeImages[self.i]
-            print(self.selectedImagePath)
         elif self.comboBox.currentIndex() == 10:
             self.i = rd.randint(0, len(outstandingMemeImages) - 1)
-            print(self.i)
             self.selectedImagePath = outstandingMemeImages[self.i]
         elif self.comboBox.currentIndex() == 11:
             self.i = rd.randint(0, len(changeMyMindMemeImages) - 1)
-            print(self.i)
             self.selectedImagePath = changeMyMindMemeImages[self.i]
-            print(self.selectedImagePath)
         else:
             self.i = rd.randint(1, 10)  # we set i as a random number so we can then influence the frequency of the images that will appear
 
@@ -164,8 +143,6 @@ class Ui_MainWindow(object):
                 self.n = rd.randint(101, 200)
             elif self.i > 8 and self.i <= 10:
                 self.n = rd.randint(201, 324)
-
-            print(self.n)  # debugging, prints the n into the console
 
             self.selectedImagePath = allImages[self.n]
 
